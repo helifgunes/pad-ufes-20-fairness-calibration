@@ -1,0 +1,33 @@
+{
+  "status": "prospective_phase_1_specification_not_an_executable_training_config",
+  "protocol_version": "0.1",
+  "dataset_version": "PAD-UFES-20-v1",
+  "split_seed": 42,
+  "training_seeds": [42],
+  "split_unit": "patient",
+  "target_patient_fractions": {
+    "train": 0.6,
+    "selection_validation": 0.1,
+    "calibration_validation": 0.1,
+    "test": 0.2
+  },
+  "primary_analysis_unit": "lesion",
+  "lesion_aggregation": "mean_image_logits_then_softmax",
+  "models": ["small_cnn_random_initialization", "resnet18_imagenet_pretrained"],
+  "core_loss": "unweighted_cross_entropy",
+  "primary_predictive_metric": "six_class_macro_f1",
+  "primary_calibration_comparison": "test_nll_after_minus_before_temperature_scaling",
+  "temperature_fit_partition": "calibration_validation",
+  "ece_bins": 10,
+  "brier_convention": "mean_sum_over_classes_no_division_by_class_count",
+  "age_boundary_years": 60,
+  "fitzpatrick_analysis": "exploratory_support_dependent",
+  "bootstrap": {
+    "unit": "patient",
+    "seed": 2026,
+    "replicates": 2000,
+    "interval": "95_percent_percentile",
+    "minimum_valid_fraction_for_interval": 0.95
+  },
+  "test_results_available": false
+}

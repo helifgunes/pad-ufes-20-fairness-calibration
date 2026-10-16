@@ -195,9 +195,9 @@ cython_debug/
 .abstra/
 
 # Visual Studio Code
-#   Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore 
+#   Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore
 #   that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
-#   and can be added to the global gitignore or merged into this file. However, if you prefer, 
+#   and can be added to the global gitignore or merged into this file. However, if you prefer,
 #   you could uncomment the following to ignore the entire vscode folder
 # .vscode/
 # Temporary file for partial code execution
@@ -216,3 +216,73 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project-specific medical data and research artifact rules
+# Environments and tooling
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.DS_Store
+.env
+.env.*
+
+# Data access instructions are public; medical data is local
+/data/**
+!/data/README.md
+/datasets/
+/private/
+/work/
+/runs/
+/artifacts/
+/checkpoints/
+/wandb/
+/mlruns/
+/tensorboard/
+
+# Individual metadata, predictions and archives
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.xlsx
+*.xls
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# Medical images and notebook exports; review any publication exceptions
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.tif
+*.tiff
+*.bmp
+*.dcm
+*.html
+
+# Large model artifacts
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+
+# Aggregate publication outputs require an explicit allow-list after review
+/results/**
+!/results/README.md
+/figures/**
+!/figures/README.md
+
+# Markdown, JSON and notebook content must also be reviewed before publishing.

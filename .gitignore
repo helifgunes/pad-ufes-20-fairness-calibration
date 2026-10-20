@@ -286,3 +286,20 @@ __pycache__/
 !/figures/README.md
 
 # Markdown, JSON and notebook content must also be reviewed before publishing.
+
+# Reviewed Phase 2 aggregate outputs only. Raw data and medical images stay ignored.
+!/results/metadata_audit.json
+!/figures/eda/
+/figures/eda/*
+!/figures/eda/class_support.svg
+!/figures/eda/class_support.png
+!/figures/eda/patient_demographics.svg
+!/figures/eda/patient_demographics.png
+!/figures/eda/fitzpatrick_coverage.svg
+!/figures/eda/fitzpatrick_coverage.png
+!/figures/eda/metadata_missingness.svg
+!/figures/eda/metadata_missingness.png
+!/figures/eda/demographic_missingness_by_diagnosis.svg
+!/figures/eda/demographic_missingness_by_diagnosis.png
+!/figures/eda/patient_age_distribution.svg
+!/figures/eda/patient_age_distribution.png

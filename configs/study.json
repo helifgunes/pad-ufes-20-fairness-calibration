@@ -1,6 +1,6 @@
 {
-  "status": "prospective_phase_1_specification_not_an_executable_training_config",
-  "protocol_version": "0.1",
+  "status": "prospective_model_specification_metadata_audited_not_an_executable_training_config",
+  "protocol_version": "0.2",
   "dataset_version": "PAD-UFES-20-v1",
   "split_seed": 42,
   "training_seeds": [42],
@@ -12,6 +12,8 @@
     "test": 0.2
   },
   "primary_analysis_unit": "lesion",
+  "lesion_key": ["patient_id", "lesion_id"],
+  "conflicting_patient_age_policy": "unresolved_even_within_same_age_band",
   "lesion_aggregation": "mean_image_logits_then_softmax",
   "models": ["small_cnn_random_initialization", "resnet18_imagenet_pretrained"],
   "core_loss": "unweighted_cross_entropy",

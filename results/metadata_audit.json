@@ -1,0 +1,384 @@
+{
+  "analysis_date": "2026-10-19",
+  "source_sha256": "14d145235cedb022548257acb0d84dcd949e2c916f65d2baa7c38ed5339e9527",
+  "analysis_type": "metadata_only_no_model_results",
+  "counts": {
+    "image_records": 2298,
+    "metadata_columns": 26,
+    "unique_patients": 1373,
+    "unique_lesion_id_strings": 1641,
+    "patient_lesion_pairs": 1891
+  },
+  "schema_columns": [
+    "patient_id",
+    "lesion_id",
+    "smoke",
+    "drink",
+    "background_father",
+    "background_mother",
+    "age",
+    "pesticide",
+    "gender",
+    "skin_cancer_history",
+    "cancer_history",
+    "has_piped_water",
+    "has_sewage_system",
+    "fitspatrick",
+    "region",
+    "diameter_1",
+    "diameter_2",
+    "diagnostic",
+    "itch",
+    "grew",
+    "hurt",
+    "changed",
+    "bleed",
+    "elevation",
+    "img_id",
+    "biopsed"
+  ],
+  "class_support": {
+    "ACK": {
+      "images": 730,
+      "patient_lesion_pairs": 644,
+      "patients": 525
+    },
+    "BCC": {
+      "images": 845,
+      "patient_lesion_pairs": 652,
+      "patients": 513
+    },
+    "MEL": {
+      "images": 52,
+      "patient_lesion_pairs": 36,
+      "patients": 36
+    },
+    "NEV": {
+      "images": 244,
+      "patient_lesion_pairs": 216,
+      "patients": 185
+    },
+    "SCC": {
+      "images": 192,
+      "patient_lesion_pairs": 145,
+      "patients": 133
+    },
+    "SEK": {
+      "images": 235,
+      "patient_lesion_pairs": 198,
+      "patients": 176
+    }
+  },
+  "missingness_by_image_record": {
+    "patient_id": {
+      "blank_rows": 0,
+      "unknown_rows": 0,
+      "unavailable_rows": 0,
+      "unavailable_percent": 0.0
+    },
+    "lesion_id": {
+      "blank_rows": 0,
+      "unknown_rows": 0,
+      "unavailable_rows": 0,
+      "unavailable_percent": 0.0
+    },
+    "smoke": {
+      "blank_rows": 804,
+      "unknown_rows": 0,
+      "unavailable_rows": 804,
+      "unavailable_percent": 34.987
+    },
+    "drink": {
+      "blank_rows": 804,
+      "unknown_rows": 0,
+      "unavailable_rows": 804,
+      "unavailable_percent": 34.987
+    },
+    "background_father": {
+      "blank_rows": 818,
+      "unknown_rows": 95,
+      "unavailable_rows": 913,
+      "unavailable_percent": 39.73
+    },
+    "background_mother": {
+      "blank_rows": 822,
+      "unknown_rows": 84,
+      "unavailable_rows": 906,
+      "unavailable_percent": 39.426
+    },
+    "age": {
+      "blank_rows": 0,
+      "unknown_rows": 0,
+      "unavailable_rows": 0,
+      "unavailable_percent": 0.0
+    },
+    "pesticide": {
+      "blank_rows": 804,
+      "unknown_rows": 0,
+      "unavailable_rows": 804,
+      "unavailable_percent": 34.987
+    },
+    "gender": {
+      "blank_rows": 804,
+      "unknown_rows": 0,
+      "unavailable_rows": 804,
+      "unavailable_percent": 34.987
+    },
+    "skin_cancer_history": {
+      "blank_rows": 804,
+      "unknown_rows": 0,
+      "unavailable_rows": 804,
+      "unavailable_percent": 34.987
+    },
+    "cancer_history": {
+      "blank_rows": 804,
+      "unknown_rows": 0,
+      "unavailable_rows": 804,
+      "unavailable_percent": 34.987
+    },
+    "has_piped_water": {
+      "blank_rows": 804,
+      "unknown_rows": 0,
+      "unavailable_rows": 804,
+      "unavailable_percent": 34.987
+    },
+    "has_sewage_system": {
+      "blank_rows": 804,
+      "unknown_rows": 0,
+      "unavailable_rows": 804,
+      "unavailable_percent": 34.987
+    },
+    "fitspatrick": {
+      "blank_rows": 804,
+      "unknown_rows": 0,
+      "unavailable_rows": 804,
+      "unavailable_percent": 34.987
+    },
+    "region": {
+      "blank_rows": 0,
+      "unknown_rows": 0,
+      "unavailable_rows": 0,
+      "unavailable_percent": 0.0
+    },
+    "diameter_1": {
+      "blank_rows": 804,
+      "unknown_rows": 0,
+      "unavailable_rows": 804,
+      "unavailable_percent": 34.987
+    },
+    "diameter_2": {
+      "blank_rows": 804,
+      "unknown_rows": 0,
+      "unavailable_rows": 804,
+      "unavailable_percent": 34.987
+    },
+    "diagnostic": {
+      "blank_rows": 0,
+      "unknown_rows": 0,
+      "unavailable_rows": 0,
+      "unavailable_percent": 0.0
+    },
+    "itch": {
+      "blank_rows": 0,
+      "unknown_rows": 6,
+      "unavailable_rows": 6,
+      "unavailable_percent": 0.261
+    },
+    "grew": {
+      "blank_rows": 0,
+      "unknown_rows": 402,
+      "unavailable_rows": 402,
+      "unavailable_percent": 17.493
+    },
+    "hurt": {
+      "blank_rows": 0,
+      "unknown_rows": 10,
+      "unavailable_rows": 10,
+      "unavailable_percent": 0.435
+    },
+    "changed": {
+      "blank_rows": 0,
+      "unknown_rows": 396,
+      "unavailable_rows": 396,
+      "unavailable_percent": 17.232
+    },
+    "bleed": {
+      "blank_rows": 0,
+      "unknown_rows": 6,
+      "unavailable_rows": 6,
+      "unavailable_percent": 0.261
+    },
+    "elevation": {
+      "blank_rows": 0,
+      "unknown_rows": 2,
+      "unavailable_rows": 2,
+      "unavailable_percent": 0.087
+    },
+    "img_id": {
+      "blank_rows": 0,
+      "unknown_rows": 0,
+      "unavailable_rows": 0,
+      "unavailable_percent": 0.0
+    },
+    "biopsed": {
+      "blank_rows": 0,
+      "unknown_rows": 0,
+      "unavailable_rows": 0,
+      "unavailable_percent": 0.0
+    }
+  },
+  "patient_demographics": {
+    "age": {
+      "status_patients": {
+        "known": 1283,
+        "missing": 0,
+        "conflict": 90,
+        "invalid": 0
+      },
+      "partly_missing_patients": 0,
+      "known_patient_age_summary_years": {
+        "n": 1283,
+        "mean": 58.902,
+        "median": 61.0,
+        "q1": 49.0,
+        "q3": 71.0
+      },
+      "age_group_patients": {
+        "Under 60": 608,
+        "60 and over": 675,
+        "Unresolved / missing": 90
+      }
+    },
+    "gender": {
+      "status_patients": {
+        "known": 794,
+        "missing": 579,
+        "conflict": 0,
+        "invalid": 0
+      },
+      "partly_missing_patients": 0,
+      "known_patient_distribution": {
+        "FEMALE": 416,
+        "MALE": 378
+      }
+    },
+    "fitspatrick": {
+      "status_patients": {
+        "known": 794,
+        "missing": 579,
+        "conflict": 0,
+        "invalid": 0
+      },
+      "partly_missing_patients": 0,
+      "known_patient_distribution": {
+        "1": 74,
+        "2": 465,
+        "3": 212,
+        "4": 34,
+        "5": "<10",
+        "6": "<10"
+      }
+    }
+  },
+  "demographic_coverage_by_diagnosis": {
+    "gender": {
+      "ACK": {
+        "known_images": 283,
+        "missing_images": 447
+      },
+      "BCC": {
+        "known_images": 845,
+        "missing_images": 0
+      },
+      "MEL": {
+        "known_images": 52,
+        "missing_images": 0
+      },
+      "NEV": {
+        "known_images": 75,
+        "missing_images": 169
+      },
+      "SCC": {
+        "known_images": 192,
+        "missing_images": 0
+      },
+      "SEK": {
+        "known_images": 47,
+        "missing_images": 188
+      }
+    },
+    "fitspatrick": {
+      "ACK": {
+        "known_images": 283,
+        "missing_images": 447
+      },
+      "BCC": {
+        "known_images": 845,
+        "missing_images": 0
+      },
+      "MEL": {
+        "known_images": 52,
+        "missing_images": 0
+      },
+      "NEV": {
+        "known_images": 75,
+        "missing_images": 169
+      },
+      "SCC": {
+        "known_images": 192,
+        "missing_images": 0
+      },
+      "SEK": {
+        "known_images": 47,
+        "missing_images": 188
+      }
+    }
+  },
+  "integrity_checks": {
+    "duplicate_image_ids_extra_rows": 0,
+    "duplicate_full_rows": 0,
+    "lesion_ids_used_by_multiple_patients": 250,
+    "patient_lesion_attribute_conflicts": {
+      "diagnostic": 0,
+      "age": 0,
+      "gender": 0,
+      "fitspatrick": 0,
+      "biopsed": 0
+    },
+    "filename_identifier_mismatches": 0
+  },
+  "image_count_per_patient_lesion_pair": {
+    "1": 1530,
+    "2": 324,
+    "3": 31,
+    "4": 4,
+    "5": 1,
+    "6": 1
+  },
+  "biopsy_image_counts": {
+    "True": 1342,
+    "False": 956
+  },
+  "gender_missingness_by_biopsy": {
+    "True": {
+      "images": 1342,
+      "gender_missing_images": 0
+    },
+    "False": {
+      "images": 956,
+      "gender_missing_images": 804
+    }
+  },
+  "publication_rule": "Positive demographic counts below 10 are displayed as <10; no IDs or individual ages are exported.",
+  "image_content_audit": {
+    "status": "not_performed",
+    "reason": "Image files have not been downloaded or decoded."
+  },
+  "split_status": "not_created; feasibility depends on resolving the age policy and checking image content",
+  "model_training_status": "not_started",
+  "source_code_sha256": {
+    "src/data/metadata_audit.py": "a518365a640a9a7617ecee72da9bffd3e195400a1ac49cbcb8ad56ffdb865183",
+    "src/data/eda_figures.py": "8aefa66375db5b3c39d666cb8085a21904673560b554615d8bb95ba17f101daf",
+    "scripts/audit_data.py": "a091a11ec3225ca737379cdcb1712496b945f1637773bb6d4bc7836040b513fe"
+  }
+}

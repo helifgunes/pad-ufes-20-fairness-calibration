@@ -1,10 +1,10 @@
 # Source Register
 
-Checked during planning on 16 October 2026. No local dataset properties have been verified. A blocked webpage does not imply that its full text has been read; alternate checked sources are recorded below.
+Initial literature checks: 16 October 2026. Metadata file verification: 19 October 2026. A blocked webpage does not imply that its full text has been read; alternate checked sources are recorded below.
 
 | ID / BibTeX key | Primary source | Verification scope |
 |---|---|---|
-| D1 / `padufes20data` | [Official release, version 1](https://data.mendeley.com/datasets/zr7vgbcyr2/1) | Release description, DOI, version, reported population counts and CC BY 4.0 licence checked. Download and local integrity checks pending. |
+| D1 / `padufes20data` | [Official release, version 1](https://data.mendeley.com/datasets/zr7vgbcyr2/1); [metadata file and checksum](https://data.mendeley.com/datasets/zr7vgbcyr2/1/files/fa850265-57da-48f0-ba3e-998b3e44b1f6) | Official metadata downloaded and matched to its displayed SHA-256 on 19 October 2026. Schema, counts, missingness and metadata consistency audited locally. Images remain unverified. |
 | R1 / `pacheco2020pad` | [Dataset manuscript](https://arxiv.org/html/2007.00478); [published paper](https://doi.org/10.1016/j.dib.2020.106221) | Author-manuscript dataset description, metadata, sample table and limitations checked. PMC access was intermittently blocked. |
 | R2 / `esteva2017skin` | [Nature paper](https://doi.org/10.1038/nature21056); [author-hosted paper](https://www.andreesteva.com/assets/nature_skincancer.pdf) | Publisher abstract and bibliographic details checked during initial planning; author copy located. No numerical result reproduction or full protocol extraction. |
 | R3 / `guo2017calibration` | [ICML proceedings](https://proceedings.mlr.press/v70/guo17a.html) | Proceedings metadata and abstract checked. Used for calibration motivation, not a reproduced experiment. |

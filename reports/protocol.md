@@ -1,8 +1,8 @@
 # Pilot Research Protocol
 
-Version: 0.1 — 16 October 2026
+Version: 0.2 — 19 October 2026
 
-Status: prospective. No local dataset audit, training or experimental evaluation has been performed. This is a local protocol, not an externally registered preregistration.
+Status: prospective model protocol, informed by the completed metadata audit. Images, splits, training and experimental evaluation remain pending. This is a local protocol, not an externally registered preregistration.
 
 ## Question and contribution
 
@@ -14,7 +14,7 @@ The study describes associations within the available sample. It cannot establis
 
 ## Data audit gate
 
-Use the [official version 1 release](https://data.mendeley.com/datasets/zr7vgbcyr2/1). The release reports 2,298 images, 1,641 lesions and 1,373 patients. These are published reference values, not locally verified counts.
+Use the [official version 1 release](https://data.mendeley.com/datasets/zr7vgbcyr2/1). Metadata verification confirmed 2,298 image records and 1,373 patient IDs. The file has 1,641 distinct raw lesion IDs but 1,891 patient–lesion pairs because 250 lesion IDs are reused across patients. Do not equate the pair count with independently verified biological lesions. See the [audit report](eda_report.md).
 
 The documented target labels are ACK, BCC, MEL, NEV, SCC and SEK. Relevant fields include `patient_id`, `lesion_id`, `img_id`, `diagnostic`, `age`, `gender`, `fitspatrick` and `biopsed`. The misspelled `fitspatrick` field name is retained. Blank values and `UNK` need explicit handling. [Dataset documentation](https://arxiv.org/html/2007.00478)
 
@@ -84,7 +84,7 @@ Evaluate identical test lesions before and after scaling. A shared positive temp
 
 ## Demographic analysis
 
-- Age: under 60 versus 60 and over. This is a declared study convention, not a biological boundary. Missing, invalid or unresolved ages are separate.
+- Age: under 60 versus 60 and over. This is a declared study convention, not a biological boundary. Missing, invalid or unresolved ages are separate. The metadata audit found 90 patients with conflicting ages; all remain unresolved, even when their ages fall within the same band. No first, mean or majority age will be substituted without a justified amendment.
 - Gender: retain observed categories and call the field recorded `gender`, not verified biological sex. Unknown/missing/unresolved records are explicit.
 - Fitzpatrick: exploratory type-specific summaries, conditional on support. Do not infer types from images or equate the scale with objectively measured skin colour. Do not merge categories after seeing outcomes.
 
@@ -119,3 +119,4 @@ Future work: repeated seeds, grouped cross-validation, randomly initialised ResN
 | Date | Change | Reason | Test outcomes available? |
 |---|---|---|---|
 | 2026-10-16 | Initial pilot protocol: one split and one seed replace the larger proposal | Time-limited individual research project | No |
+| 2026-10-19 | Confirm composite patient–lesion key and explicit unresolved-age handling; document demographic coverage and rare melanoma support | Observed metadata audit, before image checks or model training | No |
